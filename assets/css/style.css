@@ -1,0 +1,157 @@
+:root {
+	--color-theme--: #576ee0;
+	--color-theme-hover--: #435acb;
+}
+
+body {
+	font-family: "Montserrat", sans-serif !important;
+}
+
+.judul-carousel {
+	font-size: 20px;
+	margin-bottom: 1.5rem !important;
+}
+
+.btn-carousel {
+	padding-top: 0.2rem !important;
+	padding-bottom: 0.2rem !important;
+	padding-left: 0.7rem !important;
+	padding-right: 0.7rem !important;
+	font-size: 12px !important;
+}
+
+.text-theme {
+	color: var(--color-theme--) !important;
+}
+
+.link-theme {
+	color: var(--color-theme--) !important;
+}
+
+.link-theme:hover {
+	color: var(--color-theme-hover--) !important;
+}
+
+.bg-theme,
+.btn-theme {
+	background-color: var(--color-theme--) !important;
+	color: #fff;
+}
+
+.bg-theme-dark {
+	background-color: var(--color-theme-hover--) !important;
+	color: #fff;
+}
+
+.btn-theme:hover {
+	background-color: var(--color-theme-hover--) !important;
+}
+
+.border-theme {
+	border-color: var(--color-theme--) !important;
+}
+
+.btn-outline-theme {
+	color: var(--color-theme--) !important;
+}
+
+.btn-outline-theme:hover {
+	color: white !important;
+	background-color: var(--color-theme--) !important;
+}
+
+.navbar {
+	height: 75px;
+	transition: 0.4s !important;
+	font-size: 14px;
+	background-color: #fff;
+}
+
+.navbar .navbar-brand {
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+.nav-item .nav-link {
+	color: rgba(0, 0, 0, .7) !important;
+	font-weight: 600 !important;
+}
+
+.nav-item .nav-link:hover {
+	color: var(--color-theme--) !important;
+}
+
+.nav-item .nav-link.active {
+	color: var(--color-theme--) !important;
+}
+
+@media screen and (max-width: 350px) {
+	.judul-carousel {
+		font-size: 30px;
+		margin-bottom: 1.5rem !important;
+	}
+
+	.btn-carousel {
+		padding-top: 0.3rem !important;
+		padding-bottom: 0.3rem !important;
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+		font-size: 14px !important;
+	}
+}
+
+@media screen and (min-width: 568px) {
+	.judul-carousel {
+		font-size: 30px;
+		margin-bottom: 2rem !important;
+	}
+
+	.btn-carousel {
+		padding-top: 0.3rem !important;
+		padding-bottom: 0.3rem !important;
+		padding-left: 1.1rem !important;
+		padding-right: 1.1rem !important;
+		font-size: 14px !important;
+	}
+
+	.btn-carousel {
+		padding-top: 0.3rem !important;
+		padding-bottom: 0.3rem !important;
+		padding-left: 1.1rem !important;
+		padding-right: 1.1rem !important;
+		font-size: 14px !important;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.judul-carousel {
+		font-size: 40px;
+		margin-bottom: 2.7rem !important;
+	}
+
+	.btn-carousel {
+		padding-top: 0.4rem !important;
+		padding-bottom: 0.4rem !important;
+		padding-left: 1.3rem !important;
+		padding-right: 1.3rem !important;
+		font-size: 1rem !important;
+	}
+
+	.navbar-scrolled {
+		box-shadow: 0 .5rem 0.7rem rgba(0, 0, 0, .15) !important;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.judul-carousel {
+		font-size: 50px;
+		margin-bottom: 3rem !important;
+	}
+
+	.btn-carousel {
+		padding-top: 0.5rem !important;
+		padding-bottom: 0.5rem !important;
+		font-size: 1rem !important;
+	}
+}
