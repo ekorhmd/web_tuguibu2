@@ -25,6 +25,17 @@ class Page extends CI_Controller
         $this->load->view('templates/footer');
     }
 
+    public function visi_misi()
+    {
+        $data = [
+            'active' => 'Profil'
+        ];
+        $this->load->view('templates/header');
+        $this->load->view('templates/navbar', $data);
+        $this->load->view('visi-misi');
+        $this->load->view('templates/footer');
+    }
+
     public function pendaftaran()
     {
         $data = [
@@ -39,7 +50,7 @@ class Page extends CI_Controller
     public function fasilitas()
     {
         $data = [
-            'active' => 'Fasilitas'
+            'active' => 'Profil'
         ];
         $this->load->view('templates/header');
         $this->load->view('templates/navbar', $data);

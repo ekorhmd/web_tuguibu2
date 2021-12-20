@@ -5,9 +5,9 @@
                 <i class="fas fa-school fs-1 d-flex justify-content-center mb-2"></i>
                 <span class="text-center d-flex justify-content-center fs-4" style="letter-spacing: 5px;">INFORMASI PENDAFTARAN</span>
                 <h1 class="fw-bold text-center" style="font-size: 50px;">PPDB <?= date('Y') . '-'  . (date('Y') + 1) ?></h1>
-                <span class="text-center d-flex justify-content-center fs-4 mt-4 fw-bold" style="letter-spacing: 3px;">Hubungi Kami</span>
-                <span class="text-center d-flex justify-content-center fs-5" style="letter-spacing: 3px;">Telepon: (021) 98567121</span>
-                <span class="text-center d-flex justify-content-center fs-5" style="letter-spacing: 3px;">Whatsapp: 085691441571</span>
+                <span class="text-center d-flex justify-content-center fs-4 mt-4 fw-bold mb-2" style="letter-spacing: 3px;">Hubungi Kami</span>
+                <span class="text-center d-flex justify-content-center" style="letter-spacing: 3px;">Telepon: (021) 98567121</span>
+                <span class="text-center d-flex justify-content-center" style="letter-spacing: 3px;">Whatsapp: 085691441571</span>
             </div>
         </div>
     </div>
