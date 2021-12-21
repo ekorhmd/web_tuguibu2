@@ -18,7 +18,7 @@
                             <span class="px-0 mb-2">
                                 <i class="fas fa-map-marker-alt me-2"></i>
                                 Alamat: Jl. Radar AURI No. 30
-                                Mekarsari, Cimanggis, Kota Depok
+                                Mekarsari, Cimanggis, Kota Depok,
                                 Jawa Barat - 16952
                             </span>
                             <span class="px-0 mb-2">

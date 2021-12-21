@@ -47,14 +47,14 @@ class Page extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function fasilitas()
+    public function sarana_prasarana()
     {
         $data = [
             'active' => 'Profil'
         ];
         $this->load->view('templates/header');
         $this->load->view('templates/navbar', $data);
-        $this->load->view('fasilitas');
+        $this->load->view('sarana-prasarana');
         $this->load->view('templates/footer');
     }
 

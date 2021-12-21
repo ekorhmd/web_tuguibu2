@@ -26,7 +26,7 @@
                         <li><a href="<?= base_url('page/visi_misi') ?>" class="dropdown-item" style="font-weight: 600;">Visi Misi</a></li>
                         <li><a href="<?= base_url('page/prestasi') ?>" class="dropdown-item" style="font-weight: 600;">Prestasi</a></li>
                         <li><a href="<?= base_url('page/ekstrakulikuler') ?>" class="dropdown-item" style="font-weight: 600;">Ekstrakulikuler</a></li>
-                        <li><a href="<?= base_url("page/fasilitas") ?>" class="dropdown-item" style="font-weight: 600;">Sarana dan Prasarana</a></li>
+                        <li><a href="<?= base_url("page/sarana_prasarana") ?>" class="dropdown-item" style="font-weight: 600;">Sarana dan Prasarana</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">

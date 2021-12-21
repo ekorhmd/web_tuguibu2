@@ -2,11 +2,13 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="<?= base_url('assets/'); ?>/images/slider.jpg" class="d-block w-100" alt="...">
-                <div class="d-block h-100 d-flex align-items-center" style="position: absolute; right: 15%; top:0; left: 15%; ">
-                    <div>
-                        <h1 class="text-white text-capitalize judul-carousel">Selamat Datang Di<br> <b> SMP Yaspen Tugu Ibu 2</b></h1>
-                        <a href="page/pendaftaran" class="btn btn-theme rounded-pill text-white w-auto btn-carousel">Informasi Pendaftaran</a>
+                <img src="<?= base_url('assets/'); ?>/images/banner2.jpg" class="d-block w-100">
+                <div class="container">
+                    <div class="d-block h-100 d-flex align-items-center" style="position: absolute; right: 10%; top:0; left: 10%; ">
+                        <div>
+                            <h1 class="text-white text-capitalize judul-carousel">Selamat Datang Di<br> <b> SMP Yaspen Tugu Ibu 2</b></h1>
+                            <a href="page/pendaftaran" class="btn btn-theme rounded-pill text-white w-auto btn-carousel">Informasi Pendaftaran</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,7 +89,7 @@
         <div class="row">
             <div class="col-md-4 row my-auto d-flex justify-content-center">
                 <div class="col-12 mb-3">
-                    <img src="<?= base_url('assets/'); ?>images/welcome.png" class="img-fluid rounded-circle d-flex mx-auto" style="width: 250px">
+                    <img src="<?= base_url('assets/'); ?>images/bu-ita-kepsek.jpg" class="img-fluid rounded d-flex mx-auto" style="width: 250px;">
                 </div>
                 <div class="col-12 d-flex justify-content-center">
                     <span class="text-center h5 mb-0">Dra. Hj. Ita Nur'Asita, MM</span>
@@ -115,8 +117,8 @@
                     siswa-siswi SMP Yaspen Tugu Ibu 2</span>
             </div>
         </div>
-        <div class="row mt-5 pt-3 mx-0">
-            <div class="col-md-4 row m-0 p-0">
+        <div class="row mt-md-5 pt-md-3 mt-4 mx-0">
+            <div class="col-md-4 mb-3 mb-md-0 row m-0 p-0">
                 <div class="col-12 text-center">
                     <span class="h1 fw-bolder counter">
                         20
@@ -128,7 +130,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-md-4 row m-0 p-0">
+            <div class="col-md-4 mb-3 mb-md-0 row m-0 p-0">
                 <div class="col-12 text-center">
                     <span class="h1 fw-bolder counter">
                         100
@@ -203,6 +205,32 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="lokasi" class="py-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="fw-bold text-center">Lokasi</h2>
+                <span class="d-flex justify-content-center text-center">Temui kami melalui Google Maps</span>
+            </div>
+        </div>
+        <div class="row mt-5 mx-0">
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="row">
+                    <span class="col-md-12 mb-md-4 display-6 fs-3 text-center">
+                        Lokasi kami ?
+                    </span>
+                    <span class="col-md-12 display-6 fs-4 text-center">
+                        Jl. Radar AURI No. 30 Mekarsari, Cimanggis, Kota Depok, Jawa Barat - 16952
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.171770339431!2d106.87887581431163!3d-6.371812064101601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec9bb403cf93%3A0x417a433dba62de1!2sSekolah%20Menengah%20Pertama%20Yaspen%20Tugu%20Ibu%202%20Depok!5e0!3m2!1sid!2sid!4v1639986978348!5m2!1sid!2sid" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
