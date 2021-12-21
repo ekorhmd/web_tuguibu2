@@ -11,7 +11,7 @@
                             tugu ibu)</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mt-md-0 mt-4">
                     <div class="row">
                         <h3 class="text-uppercase h6 fw-bold ms-md-5">Contact Us</h3>
                         <div class="row ms-md-5 mx-0 mt-md-4">
@@ -23,9 +23,13 @@
                             </span>
                             <span class="px-0 mb-2">
                                 <i class="fas fa-phone me-2"></i>
-                                Telp: (021) 98567121 / (+62) 85691441571
+                                Telp: (021) 98567121
                             </span>
                             <span class="px-0 mb-2">
+                                <i class="fab fa-whatsapp me-2"></i>
+                                Whatsapp: (+62) 85691441571
+                            </span>
+                            <span class="px-0">
                                 <i class="fas fa-envelope me-2"></i>
                                 Email: <a href="mailto:smp_tugib2_dpk@yahoo.co.id" target="_blank" class="text-white text-decoration-none">smp_tugib2_dpk@yahoo.co.id</a>
                             </span>
@@ -46,9 +50,10 @@
 
 
 </body>
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 
 <script src="<?= base_url('assets/') ?>bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="<?= base_url('assets/') ?>/js/main.js"></script>
+<script src="<?= base_url('assets/') ?>/js/main.js" type="text/javascript"></script>
+<script src="<?= base_url('assets/') ?>js/waypoints.min.js"></script>
+<script src="<?= base_url('assets/') ?>js/counterup.min.js"></script>
 
 </html>

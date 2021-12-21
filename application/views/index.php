@@ -118,8 +118,8 @@
         <div class="row mt-5 pt-3 mx-0">
             <div class="col-md-4 row m-0 p-0">
                 <div class="col-12 text-center">
-                    <span class="h1 fw-bolder">
-                        28
+                    <span class="h1 fw-bolder counter">
+                        20
                     </span>
                 </div>
                 <div class="col-12 text-center mt-1">
@@ -130,7 +130,7 @@
             </div>
             <div class="col-md-4 row m-0 p-0">
                 <div class="col-12 text-center">
-                    <span class="h1 fw-bolder">
+                    <span class="h1 fw-bolder counter">
                         100
                     </span>
                 </div>
@@ -142,8 +142,8 @@
             </div>
             <div class="col-md-4 row m-0 p-0">
                 <div class="col-12 text-center">
-                    <span class="h1 fw-bolder">
-                        20
+                    <span class="h1 fw-bolder counter">
+                        10
                     </span>
                 </div>
                 <div class="col-12 text-center mt-1">

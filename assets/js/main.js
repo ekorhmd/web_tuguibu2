@@ -1,20 +1,44 @@
-window.onscroll = function () {
-	scrollFunction()
-};
+$(function () {
+	var navbar = $('#navbar');
 
-function scrollFunction() {
-	var element = document.getElementById("navbar");
-	var element2 = document.getElementById("navbar-brand");
-	var element3 = document.getElementById("navbarTogglerDemo02");
-	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-		element.style.height = "55px";
-		element.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2)";
-		element2.style.height = "30px";
-		element3.style.marginTop = "6px"
-	} else {
-		element.style.height = "75px";
-		element.style.boxShadow = "none";
-		element2.style.height = "65px";
-		element3.style.marginTop = "0px"
-	}
-}
+	$(window).scroll(function () {
+		if ($(window).scrollTop() <= 20) {
+			navbar.removeClass('navbar-scroll');
+		} else {
+			navbar.addClass('navbar-scroll');
+		}
+	});
+	$('.counter').counterUp({
+		delay: 10,
+		time: 1000
+	});
+});
+
+
+
+
+// var a = 0;
+// $(window).scroll(function () {
+// 	var oTop = $('#data').offset().top - window.innerHeight;
+// 	if (a == 0 && $(window).scrollTop() > oTop) {
+// 		$('.counter').each(function () {
+// 			var $this = $(this),
+// 				countTo = $this.attr('data-count');
+// 			$({
+// 				countNum: $this.text()
+// 			}).animate({
+// 				countNum: countTo
+// 			}, {
+// 				duration: 1500,
+// 				easing: 'swing',
+// 				step: function () {
+// 					$this.text(Math.floor(this.countNum));
+// 				},
+// 				complete: function () {
+// 					$this.text(this.countNum);
+// 				}
+// 			});
+// 		});
+// 		a = 1;
+// 	}
+// });

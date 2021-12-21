@@ -9,9 +9,11 @@
         <h2> Visi </h2>
         <p> "Kokoh dalam Imtaq, Unggul dalam Prestasi, dan Terdepan dalam Disiplin."</p>
         <h2> Misi </h2>
-        <p>1.Berusaha untuk mempertinggi iman dan takwa terhadap Tuhan Yang Maha Esa</p>
-        <p>2.Meningkatkan prestasi melalui pendidikan, pengajaran, pelatihan, bimbingan dan motivasi agar siap melanjutkan ke jenjang yang lebih tinggi</p>
-        <p>3.Mengutamakan kedisiplinan agar kelak dapat berkiprah dalam kehidupan bermasyarakat</p>
+        <ol class="px-4">
+            <li class="ps-2">Berusaha untuk mempertinggi iman dan takwa terhadap Tuhan Yang Maha Esa</li>
+            <li class="ps-2">Meningkatkan prestasi melalui pendidikan, pengajaran, pelatihan, bimbingan dan motivasi agar siap melanjutkan ke jenjang yang lebih tinggi</li>
+            <li class="ps-2">Mengutamakan kedisiplinan agar kelak dapat berkiprah dalam kehidupan bermasyarakat</li>
+        </ol>
     </div>
 </div>
 </div>
