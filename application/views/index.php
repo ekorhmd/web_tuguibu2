@@ -25,7 +25,7 @@
         </div>
         <div class="row mt-5 mx-0">
             <div class="col-md-5 p-2">
-                <img src="<?= base_url('assets/'); ?>images/welcome.png" style="height: 300px" class="img-fluid rounded d-flex mx-auto col-md-12">
+                <img src="<?= base_url('assets/'); ?>images/banner.jpg" style="height: 300px" class="img-fluid rounded d-flex mx-auto col-md-12">
             </div>
             <div class="col-md-7 p-2 ps-md-5">
                 <span class="h3 fw-bold">Tentang SMP Tugu Ibu 2</span>
