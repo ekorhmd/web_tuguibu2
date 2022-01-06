@@ -2,7 +2,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('admin') ?>">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
@@ -10,7 +10,7 @@
     </a>
 
     <!-- Divider -->
-    <hr class="sidebar-divider mt-0 mb-4">
+    <hr class="sidebar-divider mt-0 mb-3">
 
     <!-- Nav Item - Dashboard -->
     <?php if ($active == 'Dashboard') : ?>
@@ -18,49 +18,98 @@
         <?php else : ?>
         <li class="nav-item">
         <?php endif; ?>
-        <a class="nav-link pt-0 pb-4" href="<?= base_url('admin/index') ?>">
+        <a class="nav-link pt-0 pb-3" href="<?= base_url('admin/dashboard') ?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
         </a>
         </li>
 
-        <!-- Nav Item - Utilities Collapse Menu -->
+        <hr class="sidebar-divider">
+
+        <div class="sidebar-heading">
+            Management Data
+        </div>
+
         <?php if ($active == 'Guru') : ?>
             <li class="nav-item active">
             <?php else : ?>
             <li class="nav-item">
-            <?php endif; ?> <a class="nav-link pt-0 pb-4 collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                <i class="fas fa-fw fa-wrench"></i>
+            <?php endif; ?> <a class="nav-link pt-2  collapsed" href="#" data-toggle="collapse" data-target="#dropdown-guru" aria-expanded="true" aria-controls="dropdown-guru">
+                <i class="fas fa-fw fa-user-tie"></i>
                 <span>Guru</span>
             </a>
 
             <?php if ($active == 'Guru') : ?>
-                <div id="collapseUtilities" class="collapse show" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div id="dropdown-guru" class="collapse show" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                 <?php else : ?>
-                    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                    <div id="dropdown-guru" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <?php endif; ?>
                     <div class="bg-white py-2 collapse-inner rounded">
                         <?php if ($sidebar == 'Data Guru') : ?>
-                            <a class="collapse-item active" href="<?= base_url('admin/data_guru') ?>">Data Guru</a>
+                            <a class="collapse-item active" href="<?= base_url('guru') ?>">Data Guru</a>
                         <?php else : ?>
-                            <a class="collapse-item" href="<?= base_url('admin/data_guru') ?>">Data Guru</a>
+                            <a class="collapse-item" href="<?= base_url('guru') ?>">Data Guru</a>
                         <?php endif; ?>
                         <?php if ($sidebar == 'Tambah Guru') : ?>
-                            <a class="collapse-item active" href="<?= base_url('admin/tambah_guru') ?>">Tambah Guru</a>
+                            <a class="collapse-item active" href="<?= base_url('guru/tambah') ?>">Tambah Guru</a>
                         <?php else : ?>
-                            <a class="collapse-item" href="<?= base_url('admin/tambah_guru') ?>">Tambah Guru</a>
+                            <a class="collapse-item" href="<?= base_url('guru/tambah') ?>">Tambah Guru</a>
                         <?php endif; ?>
                     </div>
                     </div>
             </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+            <?php if ($active == 'Kalender Akademik') : ?>
+                <li class="nav-item active">
+                <?php else : ?>
+                <li class="nav-item">
+                <?php endif; ?>
+                <a class="nav-link pt-0 pb-3" href="<?= base_url('akademik') ?>">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>Kalender Akademik</span>
+                </a>
+                </li>
 
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
+                <!-- Divider -->
+                <hr class="sidebar-divider">
+
+                <div class="sidebar-heading">
+                    Autentikasi Login
+                </div>
+
+                <?php if ($active == 'Pengguna') : ?>
+                    <li class="nav-item active">
+                    <?php else : ?>
+                    <li class="nav-item">
+                    <?php endif; ?> <a class="nav-link pt-2  collapsed" href="#" data-toggle="collapse" data-target="#dropdown-pengguna" aria-expanded="true" aria-controls="dropdown-pengguna">
+                        <i class="fas fa-users fa-fw"></i>
+                        <span>Pengguna</span>
+                    </a>
+
+                    <?php if ($active == 'Pengguna') : ?>
+                        <div id="dropdown-pengguna" class="collapse show" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                        <?php else : ?>
+                            <div id="dropdown-pengguna" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                            <?php endif; ?>
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <?php if ($sidebar == 'Data Pengguna') : ?>
+                                    <a class="collapse-item active" href="<?= base_url('user') ?>">Data Pengguna</a>
+                                <?php else : ?>
+                                    <a class="collapse-item" href="<?= base_url('user') ?>">Data Pengguna</a>
+                                <?php endif; ?>
+                                <?php if ($sidebar == 'Tambah Pengguna') : ?>
+                                    <a class="collapse-item active" href="<?= base_url('user/tambah') ?>">Tambah Pengguna</a>
+                                <?php else : ?>
+                                    <a class="collapse-item" href="<?= base_url('user/tambah') ?>">Tambah Pengguna</a>
+                                <?php endif; ?>
+                            </div>
+                            </div>
+                    </li>
+
+                    <!-- Sidebar Toggler (Sidebar) -->
+                    <div class="text-center d-none d-md-inline">
+                        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                    </div>
 
 </ul>
 <!-- End of Sidebar -->

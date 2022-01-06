@@ -3,6 +3,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Page extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('ModelData');
+    }
+
     public function index()
     {
         $data = [
@@ -22,6 +28,37 @@ class Page extends CI_Controller
         $this->load->view('templates/header');
         $this->load->view('templates/navbar', $data);
         $this->load->view('profil');
+        $this->load->view('templates/footer');
+    }
+
+    public function kepegawaian()
+    {
+        $guru =  $this->ModelData->data_guru();
+
+        $data = [
+            'active' => 'Profil',
+            'guru' => $guru
+        ];
+        $this->load->view('templates/header');
+        $this->load->view('templates/navbar', $data);
+        $this->load->view('kepegawaian');
+        $this->load->view('templates/footer');
+    }
+
+    public function kurikulum()
+    {
+        $guru =  $this->ModelData->data_guru();
+        $akademik = $this->ModelData->data_akademik();
+
+        $data = [
+            'active' => 'Profil',
+            'guru' => $guru,
+            'akademik' => $akademik
+        ];
+
+        $this->load->view('templates/header');
+        $this->load->view('templates/navbar', $data);
+        $this->load->view('kurikulum', $data);
         $this->load->view('templates/footer');
     }
 
@@ -77,17 +114,6 @@ class Page extends CI_Controller
         $this->load->view('templates/header');
         $this->load->view('templates/navbar', $data);
         $this->load->view('berita');
-        $this->load->view('templates/footer');
-    }
-
-    public function ekstrakulikuler()
-    {
-        $data = [
-            'active' => 'Ekstrakulikuler'
-        ];
-        $this->load->view('templates/header');
-        $this->load->view('templates/navbar', $data);
-        $this->load->view('ekstrakulikuler');
         $this->load->view('templates/footer');
     }
 

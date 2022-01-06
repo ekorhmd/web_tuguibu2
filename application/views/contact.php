@@ -1,6 +1,6 @@
-<div class="section-header mb-4 py-4">
+<div class="section-header my-4 py-4">
     <h2 class="fw-bold text-center">Contact Us</h2>
-    <span class="d-flex justify-content-center text-center">Informasi mengenai kontak yang bisa dihubungi dan pesan digital.</span>
+    <span class="d-flex justify-content-center text-center">Informasi mengenai kontak yang bisa dihubungi dan lokasi sekolah.</span>
 </div>
 <div class="row mb-3 mx-md-3 mx-0">
     <div class="col-md-12">
@@ -17,12 +17,14 @@
                 <p class="mb-0 text-center">Jl. Radar Auri No.45G, Mekarsari, Kec. Cimanggis, Kota Depok, Jawa Barat - 16952</p>
             </div>
         </div>
-        <div class="col-md-3 mx-0 pt-md-0 pt-4">
+        <div class="card col-md-3 mx-0 pt-md-0 pt-4 border-0">
             <div class="col-md-12 d-flex justify-content-center mb-3">
                 <i class="fas fa-envelope fs-2"></i>
             </div>
-            <div class="col-md-12 ps-0">
-                <p class="mb-0 text-center"><a href="mailto:smp_tugib2_dpk@yahoo.co.id" target="_blank" class="text-decoration-none text-dark">smp_tugib2_dpk@yahoo.co.id</a></p>
+            <div class="col-md-12 ps-0 ">
+                <p class="mb-0 text-center">
+                    <a href="mailto:smp_tugib2_dpk@yahoo.co.id" target="_blank" class="text-center text-decoration-none text-dark stretched-link">smp_tugib2_dpk@yahoo.co.id</a>
+                </p>
             </div>
         </div>
         <div class="col-md-2 mx-0 pt-md-0 pt-4">
@@ -33,12 +35,14 @@
                 <p class="mb-0 text-center"> (021) 98567121 </p>
             </div>
         </div>
-        <div class="col-md-2 mx-0 pt-md-0 pt-4">
+        <div class="card col-md-2 mx-0 pt-md-0 pt-4 border-0">
             <div class="col-md-12 d-flex justify-content-center mb-3">
                 <i class="fab fa-whatsapp fs-2"></i>
             </div>
             <div class="col-md-12 ps-0">
-                <p class="mb-0 text-center">(+62) 85691441571</p>
+                <p class="mb-0 text-center">
+                    <a href="https://bit.ly/3ehuOc0" target="_blank" class="text-center text-decoration-none text-dark stretched-link">(+62) 85691441571</a>
+                </p>
             </div>
         </div>
     </div>

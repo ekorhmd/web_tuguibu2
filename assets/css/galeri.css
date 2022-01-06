@@ -1,0 +1,57 @@
+.gallery {
+	min-height: 100vh !important;
+	padding-bottom: 100px !important;
+}
+
+.gallery .controls {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	flex-wrap: wrap !important;
+	list-style: none !important;
+}
+
+.gallery .controls .buttons {
+	height: 40px !important;
+	width: 140px !important;
+	background: #fff !important;
+	color: #666 !important;
+	font-size: 16px !important;
+	line-height: 40px !important;
+	cursor: pointer !important;
+	margin-left: 20px !important;
+	margin-right: 20px !important;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .3) !important;
+	text-align: center !important;
+}
+
+.gallery .controls .buttons.active {
+	background: #576ee0 !important;
+	color: #fff !important;
+}
+
+.gallery .image-container {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	flex-wrap: wrap !important;
+}
+
+.gallery .image-container .image {
+	height: 250px !important;
+	overflow: hidden !important;
+	border-radius: 10px !important;
+	border: 5px solid #fff !important;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .3) !important;
+	margin: 20px !important;
+}
+
+.gallery .image-container .image img {
+	height: 100% !important;
+	width: 100% !important;
+	object-fit: cover !important;
+}
+
+.gallery .image-container .image:hover img {
+	transform: scale(1.4) !important;
+}

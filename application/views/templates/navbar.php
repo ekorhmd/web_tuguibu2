@@ -11,50 +11,57 @@
             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto align-items-center">
                 <li class="nav-item">
                     <?php if ($active == 'Home') :  ?>
-                        <a class="nav-link ps-md-3 active fw-bold" href="<?= base_url('') ?>">Home</a>
+                        <a class="nav-link px-md-2 active fw-bold" href="<?= base_url('') ?>">Home</a>
                     <?php else : ?>
-                        <a class="nav-link ps-md-3" href="<?= base_url('') ?>">Home</a>
+                        <a class="nav-link px-md-2" href="<?= base_url('') ?>">Home</a>
                     <?php endif; ?>
                 </li>
                 <li class="nav-item dropdown">
                     <?php if ($active == 'Profil') : ?>
-                        <a class="nav-link ps-md-3 active fw-bold dropdown-toggle" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="<?= base_url('page/profil') ?>">Profil</a>
+                        <a class="nav-link px-md-2 active fw-bold dropdown-toggle" id="profilDropdown" role="button" href="#">Profil</a>
                     <?php else : ?>
-                        <a class="nav-link ps-md-3 dropdown-toggle text-center" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="<?= base_url('page/profil') ?>">Profil</a>
+                        <a class="nav-link px-md-2 dropdown-toggle text-center" id="profilDropdown" role="button" href="#">Profil</a>
                     <?php endif; ?>
                     <ul class="dropdown-menu" aria-labelledby="profilDropdown">
-                        <li><a href="<?= base_url('page/visi_misi') ?>" class="dropdown-item" style="font-weight: 600;">Visi Misi</a></li>
-                        <li><a href="<?= base_url('page/prestasi') ?>" class="dropdown-item" style="font-weight: 600;">Prestasi</a></li>
-                        <li><a href="<?= base_url('page/ekstrakulikuler') ?>" class="dropdown-item" style="font-weight: 600;">Ekstrakulikuler</a></li>
-                        <li><a href="<?= base_url("page/sarana_prasarana") ?>" class="dropdown-item" style="font-weight: 600;">Sarana dan Prasarana</a></li>
+                        <li><a href="<?= base_url("page/kepegawaian") ?>" class="dropdown-item">Kepegawaian</a></li>
+                        <li><a href="<?= base_url("page/kurikulum") ?>" class="dropdown-item">Kurikulum</a></li>
+                        <li><a href="<?= base_url("page/sarana_prasarana") ?>" class="dropdown-item">Sarana dan Prasarana</a></li>
+                        <li><a href="<?= base_url('page/visi_misi') ?>" class="dropdown-item">Visi Misi</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <?php if ($active == 'Pendaftaran') :  ?>
-                        <a class="nav-link ps-md-3 active fw-bold" href="<?= base_url('page/pendaftaran') ?>">Pendaftaran</a>
+                        <a class="nav-link px-md-2 active fw-bold" href="<?= base_url('page/pendaftaran') ?>">Pendaftaran</a>
                     <?php else : ?>
-                        <a class="nav-link ps-md-3" href="<?= base_url('page/pendaftaran') ?>">Pendaftaran</a>
+                        <a class="nav-link px-md-2" href="<?= base_url('page/pendaftaran') ?>">Pendaftaran</a>
                     <?php endif; ?>
                 </li>
                 <li class="nav-item">
                     <?php if ($active == 'Berita Sekolah') :  ?>
-                        <a class="nav-link ps-md-3 active" href="<?= base_url('page/berita') ?>">Berita Sekolah</a>
+                        <a class="nav-link px-md-2 active fw-bold" href="<?= base_url('page/berita') ?>">Berita Sekolah</a>
                     <?php else : ?>
-                        <a class="nav-link ps-md-3" href="<?= base_url('page/berita') ?>">Berita Sekolah</a>
+                        <a class="nav-link px-md-2" href="<?= base_url('page/berita') ?>">Berita Sekolah</a>
+                    <?php endif; ?>
+                </li>
+                <li class="nav-item">
+                    <?php if ($active == 'Prestasi') :  ?>
+                        <a class="nav-link px-md-2 active fw-bold" href="<?= base_url('page/prestasi') ?>">Prestasi</a>
+                    <?php else : ?>
+                        <a href="<?= base_url('page/prestasi') ?>" class="nav-link px-md-2">Prestasi</a>
                     <?php endif; ?>
                 </li>
                 <li class="nav-item">
                     <?php if ($active == 'Galeri') :  ?>
-                        <a class="nav-link ps-md-3 active" href="<?= base_url('page/galeri') ?>">Galeri</a>
+                        <a class="nav-link px-md-2 active fw-bold" href="<?= base_url('page/galeri') ?>">Galeri</a>
                     <?php else : ?>
-                        <a class="nav-link ps-md-3" href="<?= base_url('page/galeri') ?>">Galeri</a>
+                        <a class="nav-link px-md-2" href="<?= base_url('page/galeri') ?>">Galeri</a>
                     <?php endif; ?>
                 </li>
                 <li class="nav-item">
                     <?php if ($active == 'Contact Us') :  ?>
-                        <a class="nav-link ps-md-3 active" href="<?= base_url('page/contact') ?>">Contact Us</a>
+                        <a class="nav-link px-md-2 active fw-bold" href="<?= base_url('page/contact') ?>">Contact Us</a>
                     <?php else : ?>
-                        <a class="nav-link ps-md-3" href="<?= base_url('page/contact') ?>">Contact Us</a>
+                        <a class="nav-link px-md-2" href="<?= base_url('page/contact') ?>">Contact Us</a>
                     <?php endif; ?>
                 </li>
             </ul>

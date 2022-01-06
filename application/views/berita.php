@@ -1,8 +1,9 @@
-<div class="container mt-3 mb-4">
-    <div class="card-body">
-        <h2 class="fw-bold text-center mb-4">Berita Sekolah</h2>
-        <hr>
-
+<div class="section-header my-4 py-4">
+    <h2 class="fw-bold text-center">Berita Sekolah</h2>
+    <span class="d-flex justify-content-center text-center">Informasi seputar SMP Yaspen Tugu Ibu 2.</span>
+</div>
+<div class="container mb-4">
+    <div class="card-body py-0">
         <div class="row mb-4">
             <?php for ($i = 0; $i < 9; $i++) : ?>
                 <div class="col-md-6">

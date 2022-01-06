@@ -2,7 +2,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="<?= base_url('assets/'); ?>/images/banner2.jpg" class="d-block w-100">
+                <img src="<?= base_url('assets/'); ?>/images/banner.jpg" class="d-block w-100">
                 <div class="container">
                     <div class="d-block h-100 d-flex align-items-center" style="position: absolute; right: 10%; top:0; left: 10%; ">
                         <div>
@@ -25,22 +25,12 @@
         </div>
         <div class="row mt-5 mx-0">
             <div class="col-md-5 p-2">
-                <img src="<?= base_url('assets/'); ?>images/banner.jpg" style="height: 300px" class="img-fluid rounded d-flex mx-auto col-md-12">
+                <img src="<?= base_url('assets/'); ?>images/banner2.jpg" style="height: 300px" class="img-fluid rounded d-flex mx-auto col-md-12">
             </div>
             <div class="col-md-7 p-2 ps-md-5">
-                <span class="h3 fw-bold">Tentang SMP Tugu Ibu 2</span>
-                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias est nam, sunt
-                    dolore quos
-                    aliquam earum ipsam dolorum quo quas minus recusandae excepturi repudiandae magnam laudantium
-                    deleniti. Fugiat, fugit pariatur.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestias est nam, sunt dolore quos
-                    aliquam earum ipsam dolorum quo.</p>
-                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias est nam, sunt
-                    dolore quos
-                    aliquam earum ipsam dolorum quo quas minus recusandae excepturi repudiandae magnam laudantium
-                    deleniti. Fugiat, fugit pariatur.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestias est nam, sunt dolore quos
-                    aliquam earum ipsam dolorum quo.</p>
+                <span class="h3 fw-bold">SMP Yaspen Tugu Ibu 2</span>
+                <p class="mt-3">SMP Yaspen Tugu Ibu II, merupakan salah satu Sekolah Menengah Pertama Swasta yang ada di Kota Depok, Jawa Barat, Indonesia. Sama dengan SMP pada umumnya di Indonesia masa pendidikan sekolah di SMP Yaspen Tugu Ibu II ditempuh dalam waktu tiga tahun pelajaran, mulai dari Kelas VII sampai Kelas IX. SMP Yaspen Tugu Ibu II mendapatkan Akreditasi Sekolah B.</p>
+                <p class="mt-3">Posisi SMP Yaspen Tugu Ibu II tepat berada di pinggir jalan Radar Auri. Secara geografis SMP Yaspen Tugu Ibu II memiliki letak yang strategis, mudah dijangkau dari berbagai arah, dan dilalui segala jenis angkutan umum sehingga memudahkan akses menuju sekolah.</p>
             </div>
         </div>
     </div>
@@ -79,7 +69,7 @@
         </div>
         <div class="row mt-5 mx-0">
             <div class="col-md-12 d-flex justify-content-center">
-                <a href="#" style="font-weight: 600; font-size: 16px" class="border-3 border-theme btn btn-outline-theme py-3 px-4">Lihat Selengkapnya</a>
+                <a href="<?= base_url('page/berita') ?>" style="font-weight: 600; font-size: 16px" class="border-3 border-theme btn btn-outline-theme py-3 px-4">Lihat Selengkapnya</a>
             </div>
         </div>
 </section>
@@ -87,7 +77,12 @@
 <section id="welcome" class="py-5">
     <div class="container py-4">
         <div class="row">
-            <div class="col-md-4 row my-auto d-flex justify-content-center">
+            <div class="col-md-12">
+                <h2 class="fw-bold text-center">Kepala Sekolah</h2>
+            </div>
+        </div>
+        <div class="row mx-0 mt-4">
+            <div class="col-lg-4 row my-auto d-flex justify-content-center">
                 <div class="col-12 mb-3">
                     <img src="<?= base_url('assets/'); ?>images/bu-ita-kepsek.jpg" class="img-fluid rounded d-flex mx-auto" style="width: 250px;">
                 </div>
@@ -95,14 +90,11 @@
                     <span class="text-center h5 mb-0">Dra. Hj. Ita Nur'Asita, MM</span>
                 </div>
             </div>
-            <div class="col-md-8 my-auto px-4 pt-4">
-                <h2 class="fw-bold">Kepala Sekolah</h2>
-                <p class="m-0">Kami Menyambut baik terbitnya Website Tugu Ibu 2 yang baru , dengan harapan
-                    dipublikasinya
-                    website
-                    ini sekolah berharap : Peningkatan layanan pendidikan kepada siswa, orangtua, dan
-                    masyarakat
-                    pada umumnya semakin meningkat. </p>
+            <div class="col-lg-8 my-auto px-4 pt-4">
+                <p class="m-0 mb-2"><strong>Assalamu'alaikum Wr. Wb.</strong></p>
+                <p class="m-0 mb-2">Alhamdulillahi rabbil 'alamin, segala puji bagi Allah SWT, atas Rahmat, Taufik, dan Hidayah-Nya website SMP Yaspen Tugu Ibu 2 Depok telah hadir turut serta di kancah perkembangan teknologi dan informasi. Kami berusaha untuk menghadirkan berbagai profil dan data yang kami miliki dalam sebuah website SMP Yaspen Tugu Ibu 2 Depok. Kami berharap website ini memiliki manfaat bagi siswa, guru, karyawan, orang tua siswa, alumni, bahkan masyarakat umum yang memiliki keterkaitan kepentingan dengan kami. </p>
+                <p class="m-0 mb-2">Semoga dengan website ini, informasi data persekolahan dapat tersampaikan secara efektif dan efisien. Selain itu, komunikasi antar sekolah dengan pihak lainpun semakin lancar. Kami menyadari website ini masih terdapat berbagai kelemahan dan kekurangan. Namun demikian, kami terus berupaya agar berbagai kekurangan tersebut dapat segera diperbaiki, sehingga akan lahir sebuah website yang hampir sempurna. Masukan dan kritik membangun yang Anda berikan kepada kami turut berperan dalam proses penyempurnaan tersebut. Kami juga mengucapkan terima kasih kepada semua pihak yang turut membantu kehadiran website kami ini. Semoga Allah SWT membalasnya dengan pahala yang berlimpah. Amin. </p>
+                <p class="m-0"><strong>Wassalamu'alaikum Wr. Wb </strong> </p>
             </div>
         </div>
     </div>
@@ -118,7 +110,7 @@
             </div>
         </div>
         <div class="row mt-md-5 pt-md-3 mt-4 mx-0">
-            <div class="col-md-4 mb-3 mb-md-0 row m-0 p-0">
+            <div class="col-sm-4 mb-3 mb-sm-0 row m-0 p-0">
                 <div class="col-12 text-center">
                     <span class="h1 fw-bolder counter">
                         20
@@ -130,7 +122,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-md-4 mb-3 mb-md-0 row m-0 p-0">
+            <div class="col-sm-4 mb-3 mb-sm-0 row m-0 p-0">
                 <div class="col-12 text-center">
                     <span class="h1 fw-bolder counter">
                         100
@@ -142,7 +134,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-md-4 row m-0 p-0">
+            <div class="col-sm-4 row m-0 p-0">
                 <div class="col-12 text-center">
                     <span class="h1 fw-bolder counter">
                         10
@@ -162,49 +154,48 @@
     <div class="container py-4">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="fw-bold text-center">Prestasi</h2>
-                <span class="d-flex justify-content-center text-center">Beberapa prestasi yang telah diraih oleh
-                    siswa-siswi SMP Yaspen Tugu Ibu 2</span>
+                <h2 class="fw-bold text-center">Galeri</h2>
+                <span class="d-flex justify-content-center text-center">Beberapa foto-foto yang menggambarkan sekolah SMP Yaspen Tugu Ibu 2</span>
             </div>
         </div>
         <div class="row mt-5 mx-0">
-            <div id="carouselPrestasi" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselPrestasi" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselPrestasi" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselPrestasi" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="<?= base_url('assets/'); ?>/images/slider.jpg" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                        <img src="<?= base_url('assets/'); ?>/images/Guru+Saff.jpg" class="d-block mx-auto" style="width: auto; height:400px">
                     </div>
                     <div class="carousel-item">
-                        <img src="<?= base_url('assets/'); ?>/images/slider-2.jpg" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
+                        <img src="<?= base_url('assets/'); ?>/images/kelulusan/angkatan 2020.jpg" class="d-block mx-auto" style="width: auto; height:400px">
                     </div>
                     <div class="carousel-item">
-                        <img src="<?= base_url('assets/'); ?>/images/slider-3.jpg" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
+                        <img src="<?= base_url('assets/'); ?>/images/tour/tour5.jpg" class="d-block mx-auto" style="width: auto; height:400px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?= base_url('assets/'); ?>/images/tour/tour1.jpg" class="d-block mx-auto" style="width: auto; height:400px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?= base_url('assets/'); ?>/images/kegiatan/Kegiatan Kepala Sekolah.jpg" class="d-block mx-auto" style="width: auto; height:400px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?= base_url('assets/'); ?>/images/ekskul/Seni2.jpg" class="d-block mx-auto" style="width: auto; height:400px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?= base_url('assets/'); ?>/images/kelulusan/angkatan4 2020.jpg" class="d-block mx-auto" style="width: auto; height:400px">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrestasi" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselPrestasi" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+            </div>
+        </div>
+        <div class="row mt-5 mx-0">
+            <div class="col-md-12 d-flex justify-content-center">
+                <a href="<?= base_url('page/galeri') ?>" style="font-weight: 600; font-size: 16px" class="border-3 border-theme btn btn-outline-theme py-3 px-4">Lihat Galeri</a>
             </div>
         </div>
     </div>

@@ -2,10 +2,13 @@
 <!-- End of Main Content -->
 
 <!-- Footer -->
-<footer class="sticky-footer bg-white">
+<footer class="sticky-footer bg-white py-4">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2020</span>
+            <span>
+                Copyright &copy; 2021 <strong>SMP Yaspen Tugu Ibu 2</strong>. All right reserved <br>
+                Created by <a href="https://www.instagram.com/_ifanferdi/" class="text-secondary text-decoration-none fw-bold"><strong>Ifan</strong></a> & <a href="https://www.instagram.com/ekorhmd/" class="text-secondary text-decoration-none fw-bold"><strong>Eko</strong></a>
+            </span>
         </div>
     </div>
 </footer>
@@ -35,7 +38,7 @@
             <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="login.html">Logout</a>
+                <a class="btn btn-primary" href="<?= base_url('admin/logout') ?>">Logout</a>
             </div>
         </div>
     </div>
@@ -43,6 +46,8 @@
 
 <!-- Bootstrap core JavaScript-->
 <script src="<?= base_url('assets/') ?>vendor/jquery/jquery.min.js"></script>
+<script src="<?= base_url('assets/') ?>js/waypoints.min.js"></script>
+<script src="<?= base_url('assets/') ?>js/counterup.min.js"></script>
 <script src="<?= base_url('assets/') ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
@@ -50,13 +55,14 @@
 
 <!-- Custom scripts for all pages-->
 <script src="<?= base_url('assets/') ?>js/sb-admin-2.min.js"></script>
+<script src="<?= base_url('assets/') ?>js/main.js"></script>
 
 <!-- Page level plugins -->
-<script src="<?= base_url('assets/') ?>vendor/chart.js/Chart.min.js"></script>
+<script src="<?= base_url('assets/') ?>vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= base_url('assets/') ?>vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
 <!-- Page level custom scripts -->
-<script src="<?= base_url('assets/') ?>js/demo/chart-area-demo.js"></script>
-<script src="<?= base_url('assets/') ?>js/demo/chart-pie-demo.js"></script>
+<script src="<?= base_url('assets/') ?>js/datatables-demo.js"></script>
 
 </body>
 
