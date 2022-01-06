@@ -2,14 +2,14 @@
     <div class="card-body">
         <form action="<?= base_url('guru/tambah'); ?>" method="post" enctype="multipart/form-data">
             <div class="mb-3 row">
-                <label for="nama" class="col-md-3 col-form-label text-md-right">Nama Guru</label>
+                <label for="nama" class="col-md-3 col-form-label font-weight-bold text-md-right">Nama Guru</label>
                 <div class="col-md-7">
                     <input type="text" class="form-control <?= form_error('nama') ? 'is-invalid' : "" ?>" id="nama" name="nama" placeholder="Nama Lengkap" value="<?= set_value('nama') ?>">
                     <?= form_error('nama', '<div class="invalid-feedback">', '</div>'); ?>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="tempat_lahir" class="col-md-3 col-form-label text-md-right">Tempat, Tanggal Lahir</label>
+                <label for="tempat_lahir" class="col-md-3 col-form-label font-weight-bold text-md-right">Tempat, Tanggal Lahir</label>
                 <div class="col-md-7 row pr-0">
                     <div class="col-md-6 mb-3 mb-md-0 pr-0">
                         <input type="text" class="form-control <?= form_error('tempat_lahir') ? 'is-invalid' : "" ?>" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir" value="<?= set_value('tempat_lahir') ?>">
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="mapel" class="col-md-3 col-form-label text-md-right">Mata Pelajaran</label>
+                <label for="mapel" class="col-md-3 col-form-label font-weight-bold text-md-right">Mata Pelajaran</label>
                 <div class="col-md-7 ">
                     <select class="custom-select mb-3 <?= form_error('mapel') ? 'is-invalid' : "" ?>" name="mapel" id="mapel">
                         <option value="-" selected>- Mata Pelajaran 1 -</option>
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="jabatan" class="col-md-3 col-form-label text-md-right">Jabatan</label>
+                <label for="jabatan" class="col-md-3 col-form-label font-weight-bold text-md-right">Jabatan</label>
                 <div class="col-md-7">
                     <select class="custom-select <?= form_error('jabatan') ? 'is-invalid' : "" ?>" name="jabatan" id="jabatan">
                         <option value="-" selected>- Jabatan -</option>
@@ -73,21 +73,21 @@
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="alamat" class="col-md-3 col-form-label text-md-right">Alamat</label>
+                <label for="alamat" class="col-md-3 col-form-label font-weight-bold text-md-right">Alamat</label>
                 <div class="col-md-7">
                     <textarea class="form-control <?= form_error('alamat') ? 'is-invalid' : "" ?>" name="alamat" id="alamat" placeholder="Nama jalan, kelurahan, kecamatan, kota" style="resize: none;"><?= set_value('alamat') ?></textarea>
                     <?= form_error('alamat', '<div class="invalid-feedback">', '</div>'); ?>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="notelp" class="col-md-3 col-form-label text-md-right">No Telepon</label>
+                <label for="notelp" class="col-md-3 col-form-label font-weight-bold text-md-right">No Telepon</label>
                 <div class="col-md-7">
                     <input type="text" class="form-control <?= form_error('notelp') ? 'is-invalid' : "" ?>" id="notelp" name="notelp" placeholder="No Telepon" value="<?= set_value('notelp') ?>">
                     <?= form_error('notelp', '<div class="invalid-feedback">', '</div>'); ?>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="gambar" class="col-md-3 col-form-label text-md-right">Gambar</label>
+                <label for="gambar" class="col-md-3 col-form-label font-weight-bold text-md-right">Gambar</label>
                 <div class="col-md-7">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input <?= form_error('image') ? 'is-invalid' : "" ?>" id="image" name="image">

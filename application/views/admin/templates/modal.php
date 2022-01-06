@@ -33,17 +33,17 @@
             <form action="<?= base_url('akademik') ?>" method="POST" id="formAkademik">
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="kegiatan">Kegiatan</label>
+                        <label class="font-weight-bold" for="kegiatan">Kegiatan</label>
                         <input type="text" class="form-control" name="kegiatan" id="kegiatan" placeholder="Kegiatan">
                         <div class="invalid-feedback kegiatan_error"></div>
                     </div>
                     <div class="form-group">
-                        <label for="kegiatan">Tanggal Awal</label>
+                        <label class="font-weight-bold" for="kegiatan">Tanggal Awal</label>
                         <input type="date" class="form-control" name="tanggal1" id="tanggal1">
                         <div class="invalid-feedback tanggal1_error"></div>
                     </div>
                     <div class="form-group mb-0">
-                        <label for="kegiatan">Tanggal Akhir</label>
+                        <label class="font-weight-bold" for="kegiatan">Tanggal Akhir</label>
                         <input type="date" class="form-control" name="tanggal2" id="tanggal2">
                         <div class="invalid-feedback tanggal2_error"></div>
                     </div>
@@ -70,17 +70,17 @@
                 <input type="hidden" name="id" id="id">
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="kegiatan">Kegiatan</label>
+                        <label class="font-weight-bold" for="kegiatan">Kegiatan</label>
                         <input type="text" class="form-control" name="kegiatan" id="kegiatan" placeholder="Kegiatan">
                         <div class="invalid-feedback kegiatan_error"></div>
                     </div>
                     <div class="form-group">
-                        <label for="kegiatan">Tanggal Awal</label>
+                        <label class="font-weight-bold" for="kegiatan">Tanggal Awal</label>
                         <input type="date" class="form-control" name="tanggal1" id="tanggal1">
                         <div class="invalid-feedback tanggal1_error"></div>
                     </div>
                     <div class="form-group mb-0">
-                        <label for="kegiatan">Tanggal Akhir</label>
+                        <label class="font-weight-bold" for="kegiatan">Tanggal Akhir</label>
                         <input type="date" class="form-control" name="tanggal2" id="tanggal2">
                         <div class="invalid-feedback tanggal2_error"></div>
                     </div>

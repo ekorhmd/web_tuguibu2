@@ -12,6 +12,10 @@
     <!-- Divider -->
     <hr class="sidebar-divider mt-0 mb-3">
 
+    <div class="sidebar-heading mb-2">
+        Menu
+    </div>
+
     <!-- Nav Item - Dashboard -->
     <?php if ($active == 'Dashboard') : ?>
         <li class="nav-item active">
@@ -24,17 +28,11 @@
         </a>
         </li>
 
-        <hr class="sidebar-divider">
-
-        <div class="sidebar-heading">
-            Management Data
-        </div>
-
         <?php if ($active == 'Guru') : ?>
             <li class="nav-item active">
             <?php else : ?>
             <li class="nav-item">
-            <?php endif; ?> <a class="nav-link pt-2  collapsed" href="#" data-toggle="collapse" data-target="#dropdown-guru" aria-expanded="true" aria-controls="dropdown-guru">
+            <?php endif; ?> <a class="nav-link collapsed pt-0 pb-3" href="#" data-toggle="collapse" data-target="#dropdown-guru" aria-expanded="true" aria-controls="dropdown-guru">
                 <i class="fas fa-fw fa-user-tie"></i>
                 <span>Guru</span>
             </a>
@@ -65,51 +63,55 @@
                 <li class="nav-item">
                 <?php endif; ?>
                 <a class="nav-link pt-0 pb-3" href="<?= base_url('akademik') ?>">
-                    <i class="far fa-calendar-alt"></i>
+                    <i class="far fa-calendar-alt fa-fw"></i>
                     <span>Kalender Akademik</span>
                 </a>
                 </li>
 
-                <!-- Divider -->
-                <hr class="sidebar-divider">
-
-                <div class="sidebar-heading">
-                    Autentikasi Login
-                </div>
-
-                <?php if ($active == 'Pengguna') : ?>
+                <?php if ($active == 'Berita Sekolah') : ?>
                     <li class="nav-item active">
                     <?php else : ?>
                     <li class="nav-item">
-                    <?php endif; ?> <a class="nav-link pt-2  collapsed" href="#" data-toggle="collapse" data-target="#dropdown-pengguna" aria-expanded="true" aria-controls="dropdown-pengguna">
-                        <i class="fas fa-users fa-fw"></i>
-                        <span>Pengguna</span>
+                    <?php endif; ?>
+                    <a class="nav-link pt-0 pb-3" href="<?= base_url('berita') ?>">
+                        <i class="fas fa-newspaper fa-fw"></i>
+                        <span>Berita Sekolah</span>
                     </a>
-
-                    <?php if ($active == 'Pengguna') : ?>
-                        <div id="dropdown-pengguna" class="collapse show" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                        <?php else : ?>
-                            <div id="dropdown-pengguna" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                            <?php endif; ?>
-                            <div class="bg-white py-2 collapse-inner rounded">
-                                <?php if ($sidebar == 'Data Pengguna') : ?>
-                                    <a class="collapse-item active" href="<?= base_url('user') ?>">Data Pengguna</a>
-                                <?php else : ?>
-                                    <a class="collapse-item" href="<?= base_url('user') ?>">Data Pengguna</a>
-                                <?php endif; ?>
-                                <?php if ($sidebar == 'Tambah Pengguna') : ?>
-                                    <a class="collapse-item active" href="<?= base_url('user/tambah') ?>">Tambah Pengguna</a>
-                                <?php else : ?>
-                                    <a class="collapse-item" href="<?= base_url('user/tambah') ?>">Tambah Pengguna</a>
-                                <?php endif; ?>
-                            </div>
-                            </div>
                     </li>
 
-                    <!-- Sidebar Toggler (Sidebar) -->
-                    <div class="text-center d-none d-md-inline">
-                        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-                    </div>
+                    <?php if ($active == 'Pengguna') : ?>
+                        <li class="nav-item active">
+                        <?php else : ?>
+                        <li class="nav-item">
+                        <?php endif; ?> <a class="nav-link collapsed pt-0 pb-3" href="#" data-toggle="collapse" data-target="#dropdown-pengguna" aria-expanded="true" aria-controls="dropdown-pengguna">
+                            <i class="fas fa-users fa-fw"></i>
+                            <span>Pengguna</span>
+                        </a>
+
+                        <?php if ($active == 'Pengguna') : ?>
+                            <div id="dropdown-pengguna" class="collapse show" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                            <?php else : ?>
+                                <div id="dropdown-pengguna" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                                <?php endif; ?>
+                                <div class="bg-white py-2 collapse-inner rounded">
+                                    <?php if ($sidebar == 'Data Pengguna') : ?>
+                                        <a class="collapse-item active" href="<?= base_url('user') ?>">Data Pengguna</a>
+                                    <?php else : ?>
+                                        <a class="collapse-item" href="<?= base_url('user') ?>">Data Pengguna</a>
+                                    <?php endif; ?>
+                                    <?php if ($sidebar == 'Tambah Pengguna') : ?>
+                                        <a class="collapse-item active" href="<?= base_url('user/tambah') ?>">Tambah Pengguna</a>
+                                    <?php else : ?>
+                                        <a class="collapse-item" href="<?= base_url('user/tambah') ?>">Tambah Pengguna</a>
+                                    <?php endif; ?>
+                                </div>
+                                </div>
+                        </li>
+
+                        <!-- Sidebar Toggler (Sidebar) -->
+                        <div class="text-center d-none d-md-inline">
+                            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                        </div>
 
 </ul>
 <!-- End of Sidebar -->

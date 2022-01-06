@@ -55,4 +55,21 @@ class ModelData extends CI_Model
         $query = $this->db->get();
         return $query->result_array();
     }
+
+    public function data_berita()
+    {
+        $this->db->from('berita');
+        $this->db->order_by("date", "asc");
+        $this->db->limit(4);
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+
+    public function data_berita_limit()
+    {
+        $this->db->from('berita');
+        $this->db->order_by("date", "asc");
+        $query = $this->db->get();
+        return $query->result_array();
+    }
 }

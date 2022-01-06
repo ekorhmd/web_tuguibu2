@@ -55,7 +55,6 @@
 
 <!-- Custom scripts for all pages-->
 <script src="<?= base_url('assets/') ?>js/sb-admin-2.min.js"></script>
-<script src="<?= base_url('assets/') ?>js/main.js"></script>
 
 <!-- Page level plugins -->
 <script src="<?= base_url('assets/') ?>vendor/datatables/jquery.dataTables.min.js"></script>
@@ -64,6 +63,10 @@
 <!-- Page level custom scripts -->
 <script src="<?= base_url('assets/') ?>js/datatables-demo.js"></script>
 
+<script src="<?= base_url() ?>assets/vendor/summernote/summernote-bs4.min.js"></script>
+
+<script script src="<?= base_url('assets/') ?>js/main.js">
+</script>
 </body>
 
 </html>

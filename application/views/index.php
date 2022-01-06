@@ -47,25 +47,35 @@
             </div>
         </div>
         <div class="row mt-5 mx-0">
-            <?php for ($i = 0; $i < 4; $i++) : ?>
+            <?php foreach ($berita as $b) : ?>
                 <div class="col-md-6 p-2">
-                    <div class="card">
+                    <div class="card card-berita shadow-sm h-100 ">
                         <div class="card-body p-0">
-                            <div class="callout border-theme m-0">
-                                <div class="row">
-                                    <a href="#" class="h4 fw-bold text-decoration-none link-dark mb-0">Judul Berita</a>
-                                    <span class="mb-2">01/01/2021</span>
-                                    <span>
-                                        Ini adalah contoh isi dari berita pertama yang diperpendek
-                                        isinya...
-                                        <a href="#" class="text-decoration-none link-theme">Lebih banyak</a>
-                                    </span>
-                                </div>
+                            <div class="callout border-theme m-0 h-100 pb-0">
+                                <h3 class="row mx-0 text-theme mb-0"><?= $b['title'] ?></h3>
+                                <span class="text-theme" style="font-size: 14px;"><?= $b['date'] ?></span>
+                                <hr class="my-1">
+                                <?php
+                                $kalimat = $b['body'];
+                                $jumlahkarakter = 200;
+                                $cetak = substr($kalimat, $jumlahkarakter, 1);
+                                if ($cetak != " ") {
+                                    while ($cetak != " ") {
+                                        $i = 1;
+                                        $jumlahkarakter = $jumlahkarakter + $i;
+                                        $kalimat = $b['body'];
+                                        $cetak = substr($kalimat, $jumlahkarakter, 1);
+                                    }
+                                }
+                                $cetak = substr($kalimat, 0, $jumlahkarakter);
+                                echo $cetak;
+                                ?>
+                                <a href="#" class="text-theme text-decoration-none stretched-link">read more</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            <?php endfor; ?>
+            <?php endforeach; ?>
         </div>
         <div class="row mt-5 mx-0">
             <div class="col-md-12 d-flex justify-content-center">

@@ -4,17 +4,17 @@
             <table class="table table-bordered" id="dataTable" width="50%" cellspacing="0">
                 <thead>
                     <tr class="bg-primary text-white">
-                        <th></th>
+                        <th style="width: 20px;">#</th>
                         <th>Nama</th>
                         <th>Username</th>
-                        <th>Action</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $i = 1; ?>
                     <?php foreach ($user as $u) : ?>
                         <tr>
-                            <td class="align-middle text-center"><?= $i ?></td>
+                            <th class="align-middle text-center"><?= $i ?></th>
                             <td class="align-middle"><?= $u['nama'] ?></td>
                             <td class="align-middle"><?= $u['username'] ?></td>
                             <td class="align-middle text-center">

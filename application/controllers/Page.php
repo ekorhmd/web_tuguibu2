@@ -11,8 +11,10 @@ class Page extends CI_Controller
 
     public function index()
     {
+        $berita = $this->ModelData->data_berita_limit();
         $data = [
-            'active' => 'Home'
+            'active' => 'Home',
+            'berita' => $berita
         ];
         $this->load->view('templates/header');
         $this->load->view('templates/navbar', $data);
@@ -108,8 +110,10 @@ class Page extends CI_Controller
 
     public function berita()
     {
+        $berita = $this->ModelData->data_berita();
         $data = [
-            'active' => 'Berita Sekolah'
+            'active' => 'Berita Sekolah',
+            'berita' => $berita
         ];
         $this->load->view('templates/header');
         $this->load->view('templates/navbar', $data);

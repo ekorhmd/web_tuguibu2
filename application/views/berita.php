@@ -5,18 +5,35 @@
 <div class="container mb-4">
     <div class="card-body py-0">
         <div class="row mb-4">
-            <?php for ($i = 0; $i < 9; $i++) : ?>
+            <?php foreach ($berita as $b) : ?>
                 <div class="col-md-6">
-                    <div class="card card-berita shadow-sm mb-4">
-                        <div class="card-body">
-                            <h3 class="row mx-0 text-theme mb-0">Judul Berita</h3>
-                            <span class="text-theme" style="font-size: 14px;">2020/10/10</span>
-                            <hr class="my-1">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas aut quod delectus? Iure neque iste reiciendis quo tempore cum soluta quaerat nemo ipsum magnam, cumque velit corporis, earum maxime odit... <a href="#" class="text-theme text-decoration-none stretched-link">read more</a></p>
+                    <div class="card card-berita shadow-sm h-100 ">
+                        <div class="card-body p-0">
+                            <div class="callout border-theme m-0 h-100 pb-0">
+                                <h3 class="row mx-0 text-theme mb-0"><?= $b['title'] ?></h3>
+                                <span class="text-theme" style="font-size: 14px;"><?= $b['date'] ?></span>
+                                <hr class="my-1">
+                                <?php
+                                $kalimat = $b['body'];
+                                $jumlahkarakter = 200;
+                                $cetak = substr($kalimat, $jumlahkarakter, 1);
+                                if ($cetak != " ") {
+                                    while ($cetak != " ") {
+                                        $i = 1;
+                                        $jumlahkarakter = $jumlahkarakter + $i;
+                                        $kalimat = $b['body'];
+                                        $cetak = substr($kalimat, $jumlahkarakter, 1);
+                                    }
+                                }
+                                $cetak = substr($kalimat, 0, $jumlahkarakter);
+                                echo $cetak;
+                                ?>
+                                <a href="#" class="text-theme text-decoration-none stretched-link">read more</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            <?php endfor; ?>
+            <?php endforeach; ?>
         </div>
         <ul class="pagination justify-content-center">
             <li class="page-item disabled"><a class="page-link mx-0" href="#">Previous</a></li>
