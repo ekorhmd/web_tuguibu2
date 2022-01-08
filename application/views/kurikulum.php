@@ -29,9 +29,9 @@
                 </tr>
                 <tr>
                     <td>1. Pendidikan Agama</td>
-                    <td class="text-center">2</td>
-                    <td class="text-center">2</td>
-                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">3</td>
                 </tr>
                 <tr>
                     <td>2. Pendidikan Kewarganegaraan</td>
@@ -162,12 +162,12 @@
                                 <?php foreach ($akademik as $a) : ?>
                                     <tr>
                                         <td><?= $a['kegiatan'] ?></td>
-                                        <td>
+                                        <td class="text-center">
                                             <?php if ($a['tanggal2'] == '0000-00-00') : ?>
-                                                <?= date("d-M-Y", strtotime($a['tanggal1'])) ?>
+                                                <?= format_indo(date("Y m d", strtotime($a['tanggal1']))) ?>
                                             <?php else : ?>
-                                                <?= date("d-M-Y", strtotime($a['tanggal1'])) ?> -
-                                                <?= date("d-M-Y", strtotime($a['tanggal2'])) ?>
+                                                <?= format_indo(date("Y m d", strtotime($a['tanggal1']))) ?> -
+                                                <?= format_indo(date("Y m d", strtotime($a['tanggal2']))) ?>
                                             <?php endif; ?>
                                         </td>
                                     </tr>
