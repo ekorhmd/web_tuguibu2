@@ -1,7 +1,7 @@
 <div class="card shadow mb-4 mx-3">
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="50%" cellspacing="0">
+            <table class="table table-bordered table-hover" id="dataTable" width="50%" cellspacing="0">
                 <thead>
                     <tr class="bg-primary text-white">
                         <th style="width: 20px;">#</th>

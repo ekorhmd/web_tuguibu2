@@ -4,7 +4,7 @@
             <i class="fas fa-plus mr-2"></i>Tambah Data
         </button>
         <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="90%" cellspacing="0">
+            <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr class="bg-primary text-white">
                         <th style="width: 20px;">#</th>
@@ -21,10 +21,10 @@
                             <td class="align-middle"><?= $a['kegiatan'] ?></td>
                             <td class="align-middle">
                                 <?php if ($a['tanggal2'] == '0000-00-00') : ?>
-                                    <?= date("d-m-Y", strtotime($a['tanggal1'])) ?>
+                                    <?= format_indo(date("Y m d", strtotime($a['tanggal1']))) ?>
                                 <?php else : ?>
-                                    <?= date("d-m-Y", strtotime($a['tanggal1'])) ?> -
-                                    <?= date("d-m-Y", strtotime($a['tanggal2'])) ?>
+                                    <?= format_indo(date("Y m d", strtotime($a['tanggal1']))) ?> -
+                                    <?= format_indo(date("Y m d", strtotime($a['tanggal2']))) ?>
                                 <?php endif; ?>
                             </td>
                             <td class="align-middle text-center">

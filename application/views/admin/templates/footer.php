@@ -69,4 +69,60 @@
 </script>
 </body>
 
+<script>
+    $("#summernote").summernote({
+        height: "300px",
+        toolbar: [
+            ['style', ['bold', 'italic', 'underline', 'clear']],
+            ['font', ['strikethrough', 'superscript', 'subscript']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'picture', 'video']],
+            ['misc', ['fullscreen', 'codeview', 'help']],
+        ],
+        callbacks: {
+            onImageUpload: function(image) {
+                uploadImage(image[0]);
+            },
+            onMediaDelete: function(target) {
+                deleteImage(target[0].src);
+            }
+        }
+    });
+
+    function uploadImage(image) {
+        var data = new FormData();
+        data.append("image", image);
+        $.ajax({
+            url: "<?= base_url('berita/upload_image') ?>",
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: data,
+            type: "POST",
+            success: function(url) {
+                $("#summernote").summernote("insertImage", url);
+            },
+            error: function(data) {
+                console.log(data);
+            }
+        });
+    }
+
+    function deleteImage(src) {
+        $.ajax({
+            data: {
+                src: src
+            },
+            type: "POST",
+            url: "<?= base_url('berita/delete_image') ?>",
+            cache: false,
+            success: function(response) {
+                console.log(response);
+            }
+        });
+    }
+</script>
+
 </html>

@@ -68,7 +68,7 @@ class Berita extends CI_Controller
             ];
 
             $this->ModelData->tambah($data, 'berita');
-            $this->session->set_flashdata('sukses', 'Berita sekolah <strong>berhasil</strong> disimpan!');
+            $this->session->set_flashdata('sukses', 'Berita Sekolah <strong>berhasil</strong> disimpan!');
             redirect('berita');
         }
     }
@@ -76,11 +76,11 @@ class Berita extends CI_Controller
     public function upload_image()
     {
         if (isset($_FILES["image"]["name"])) {
-            $path = FCPATH . '/assets/images/berita/';
+            $path = './assets/images/berita';
             $config['upload_path'] = $path;
             $config['allowed_types'] = 'gif|jpg|jpeg|png|jpeg|bmp';
             $config['encrypt_name'] = TRUE;
-            $this->upload->initialize($config);
+            $this->load->library('upload', $config);
             if (!$this->upload->do_upload('image')) {
                 $this->upload->display_errors();
                 return FALSE;
