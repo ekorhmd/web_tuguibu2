@@ -9,7 +9,7 @@
                 <img src="<?= base_url('assets/'); ?>/images/sarana/Ruang OSIS.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Ruang Osis</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Didesain khusus, dan nyaman agar peserta didik bisa dengan maksimal bertukar pikiran, berdiskusi, dan sharing tentang berbagai program kerja yang hendak dilakukan.</p>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
                 <img src="<?= base_url('assets/'); ?>/images/sarana/Ruang Kelas.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Ruang Kelas</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Sebagai tempat untuk kegiatan tatap muka dalam proses kegiatan belajar mengajar (KBM).</p>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
                 <img src="<?= base_url('assets/'); ?>/images/sarana/UKS.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">UKS</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text">Usaha Kesehatan Sekolah atau yang biasa disebut dengan UKS merupakan ruangan khusus yang digunakan untuk siswa ketika dalam keadaan sakit.</p>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 <img src="<?= base_url('assets/'); ?>/images/sarana/LAB IPA.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">LAB IPA</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Sebagai tempat untuk berlatih mengembangkan keterampilan intelektual melalui kegiatan pengamatan, pencatatan dan pengkaji gejala-gejala alam..</p>
                 </div>
             </div>
         </div>
@@ -45,16 +45,16 @@
                 <img src="<?= base_url('assets/'); ?>/images/sarana/Ruang BK.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Ruang BK</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Sebagai ruangan khusus untuk digunakan siswa untuk mencurahkan segala permasalahan di sekolah dengan nyaman dan rileks.</p>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <img src="<?= base_url('assets/'); ?>/images/sarana/Perpus.jpg" class="card-img-top" alt="...">
+                <img src="<?= base_url('assets/'); ?>/images/sarana/Perpus 1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Perpustakaan</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"> Sebagai ruangan yang memiliki manfaat untuk memelihara dan meningkatkan efisiensi dan efektifitas proses belajar-mengajar.</p>
                 </div>
             </div>
         </div>

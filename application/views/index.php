@@ -6,8 +6,10 @@
                 <div class="container">
                     <div class="d-block h-100 d-flex align-items-center" style="position: absolute; right: 10%; top:0; left: 10%; ">
                         <div>
-                            <h1 class="text-white text-capitalize judul-carousel">Selamat Datang Di<br> <b> SMP Yaspen Tugu Ibu 2</b></h1>
-                            <a href="page/pendaftaran" class="btn btn-theme rounded-pill text-white w-auto btn-carousel">Informasi Pendaftaran</a>
+                            <div data-aos="fade-right" data-aos-duration="1500">
+                                <h1 class="text-white text-capitalize judul-carousel">Selamat Datang Di<br> <b> SMP Yaspen Tugu Ibu 2</b></h1>
+                                <a href="page/pendaftaran" class="btn btn-theme rounded-pill text-white w-auto btn-carousel">Informasi Pendaftaran</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -16,25 +18,27 @@
     </div>
 </section>
 
-<section id="about" class="py-5">
-    <div class="container py-4">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="fw-bold text-center">Tentang Kami</h2>
+<div data-aos="fade-up" data-aos-duration="1500">
+    <section id="about" class="py-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="fw-bold text-center">Tentang Kami</h2>
+                </div>
+            </div>
+            <div class="row mt-5 mx-0">
+                <div class="col-md-5 p-2">
+                    <img src="<?= base_url('assets/'); ?>images/banner2.jpg" style="height: 300px" class="img-fluid rounded d-flex mx-auto col-md-12">
+                </div>
+                <div class="col-md-7 p-2 ps-md-5">
+                    <span class="h3 fw-bold">SMP Yaspen Tugu Ibu 2</span>
+                    <p class="mt-3">SMP Yaspen Tugu Ibu II, merupakan salah satu Sekolah Menengah Pertama Swasta yang ada di Kota Depok, Jawa Barat, Indonesia. Sama dengan SMP pada umumnya di Indonesia masa pendidikan sekolah di SMP Yaspen Tugu Ibu II ditempuh dalam waktu tiga tahun pelajaran, mulai dari Kelas VII sampai Kelas IX. SMP Yaspen Tugu Ibu II mendapatkan Akreditasi Sekolah B.</p>
+                    <p class="mt-3">Posisi SMP Yaspen Tugu Ibu II tepat berada di pinggir jalan Radar Auri. Secara geografis SMP Yaspen Tugu Ibu II memiliki letak yang strategis, mudah dijangkau dari berbagai arah, dan dilalui segala jenis angkutan umum sehingga memudahkan akses menuju sekolah.</p>
+                </div>
             </div>
         </div>
-        <div class="row mt-5 mx-0">
-            <div class="col-md-5 p-2">
-                <img src="<?= base_url('assets/'); ?>images/banner2.jpg" style="height: 300px" class="img-fluid rounded d-flex mx-auto col-md-12">
-            </div>
-            <div class="col-md-7 p-2 ps-md-5">
-                <span class="h3 fw-bold">SMP Yaspen Tugu Ibu 2</span>
-                <p class="mt-3">SMP Yaspen Tugu Ibu II, merupakan salah satu Sekolah Menengah Pertama Swasta yang ada di Kota Depok, Jawa Barat, Indonesia. Sama dengan SMP pada umumnya di Indonesia masa pendidikan sekolah di SMP Yaspen Tugu Ibu II ditempuh dalam waktu tiga tahun pelajaran, mulai dari Kelas VII sampai Kelas IX. SMP Yaspen Tugu Ibu II mendapatkan Akreditasi Sekolah B.</p>
-                <p class="mt-3">Posisi SMP Yaspen Tugu Ibu II tepat berada di pinggir jalan Radar Auri. Secara geografis SMP Yaspen Tugu Ibu II memiliki letak yang strategis, mudah dijangkau dari berbagai arah, dan dilalui segala jenis angkutan umum sehingga memudahkan akses menuju sekolah.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+</div>
 
 <section id="berita" class="bg-light py-5">
     <div class="container py-4">

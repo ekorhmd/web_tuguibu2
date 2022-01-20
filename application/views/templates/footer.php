@@ -56,8 +56,12 @@
 <script src="<?= base_url('assets/') ?>/js/main.js" type="text/javascript"></script>
 <script src="<?= base_url('assets/') ?>js/waypoints.min.js"></script>
 <script src="<?= base_url('assets/') ?>js/counterup.min.js"></script>
+<script src="<?= base_url('assets/') ?>js/aos.js"></script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    AOS.init();
+    </script>
 
 <script>
     var myCarousel = document.querySelector('#myCarousel')
