@@ -92,7 +92,7 @@
     <div class="container py-4">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="fw-bold text-center">Kepala Sekolah</h2>
+                <h2 class="fw-bold text-center">Kepala Indonesia</h2>
             </div>
         </div>
         <div class="row mx-0 mt-4">

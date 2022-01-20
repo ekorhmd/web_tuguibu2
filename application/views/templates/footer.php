@@ -52,7 +52,7 @@
 
 </body>
 
-<script src="<?= base_url('assets/') ?>bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="<?= base_url('assets/') ?>bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?= base_url('assets/') ?>/js/main.js" type="text/javascript"></script>
 <script src="<?= base_url('assets/') ?>js/waypoints.min.js"></script>
 <script src="<?= base_url('assets/') ?>js/counterup.min.js"></script>
